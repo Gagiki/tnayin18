@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>homework28,29</title>
+</head>
+
+<body>
+
+    </form><br><br>
+
+    <style>
+        #container {
+            display: flex;
+            border-style: solid;
+            flex-direction: row;
+            font-size: 2px;
+            color: #000;
+            height: 250px;
+            width: 100%;
+            text-align: center;
+        }
+        label{
+            height: 20px;
+            margin: 29px;
+            margin-left: 456px;
+            padding: 8px;
+            width: 400px;
+            font-size: 15px;
+
+        }
+
+        input {
+            height: 20px;
+            margin: 13px;
+            margin-left: 456px;
+            padding: 8px;
+            width: 400px;
+        }
+
+    </style>
+    <div id="container">
+        <form>
+            <label id="label"for="Անուն">Անուն</label><br>
+            <input id="input" type="text" id="Անուն" name="Անուն" value=""><br>
+            <label for="Ազգանուն">Ազգանուն</label><br>
+            <input id="input" type="text" id="Ազգանուն" name="Ազգանուն" value=""><br><br>
+            <label for="Քաղաք">Քաղաք</label><br>
+            <input id="input" type="text" id="Քաղաք" name="Քաղաք" value=""><br><br>
+
+
+        </form>
+    </div>
+
+    <script>
+        const city =[{
+            name:"Գյումրի",
+            id:"1",
+            name:"Արթիկ",
+            id:"2",
+            name:"Վանաձոր",
+            id:"3",
+            name:"Սպիտակ",
+            id:"4",
+            name:"Դիլիջան",
+            id:"5",
+            name:"Նոյեմբերյան",
+            id:"6",
+            name:"Արմավիր",
+            id:"7",
+            name:"Էջմիածին",
+            id:"8",
+            name:"Թալին",
+            id:"9",
+            name:"Աշտարակ",
+            id:"10",
+            name:"Հրազդան",
+            id:"11",
+            name:"Աբովյան",
+            id:"12",
+            name:"Սևան",
+            id:"13",
+            name:"Վարդենիս",
+            id:"14",
+            name:"Արարատ",
+            id:"15",
+            name:"Արտաշատ",
+            id:"16",
+            name:"Եղեգնաձոր",
+            id:"17",
+            name:"Վայք",
+            id:"18",
+            name:"Սիսան",
+            id:"19",
+            name:"Կապան",
+            id:"20",
+            name:"Երևան",
+            id:"21",
+
+
+
+
+        }]
+        function fn(params) {
+            const inner = `<input>
+                <input> {${params.id}}</input>
+                </input> `
+            
+        }
+
+       const input = document.createElement("input")
+       input.innerHTML =inner;
+       return input;
+       let input = document.append("input")
+
+document.getElementById("container").onclick = function() {myFunction()};
+
+
+function myFunction() {
+  document.getElementById("input").classList.toggle("input");
+}
+
+    </script>
+</body>
+
+</html>
